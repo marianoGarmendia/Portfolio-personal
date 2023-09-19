@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #282c33;
+  font-family: "Fira Code", monospace;
+}
+
+.has-text-violeta {
+  color: #7b4ae2;
+}
+
+.main {
+  background-color: #282c33;
+
+  margin: 0 auto;
+  width: 90%;
+}
+
+@media (min-width: 900px) {
+  .main {
+    width: 70%;
+  }
+}
+
+@media (min-width: 900px) {
+  .section-principal {
+    margin-top: 70px;
+  }
+}
+
+.logo-nombre {
+  font-weight: 700;
+}
+
+.navbar {
+  background-color: #282c33;
+}
+
+.navbar-item > a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.saludos {
+  color: #7b4ae2;
+  text-align: center;
+  font-family: "Fira Code";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 150px;
+  border-radius: 16px;
+  background: rgba(123, 74, 226, 0.1);
+}
+
+.grettins-nombre {
+  color: #fff;
+  font-family: Fira Code;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.profesion {
+  color: #abb2bf;
+  font-family: "Fira Code";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.caja-borde-fino {
+  border: 1px solid;
+  border-color: #abb2bf;
+  width: 147px;
+  color: #abb2bf;
+}
+
+.figure {
+  width: 200px;
+  /* position: relative; */
+}
+
+@media (min-width: 900px) {
+  .figure {
+    width: 300px;
+  }
+  .img-container .figure .circulo {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+.figure > img {
+  width: 100%;
+  position: relative;
+  /* z-index: 2; */
+}
+
+.circulo {
+  position: absolute; /* Posición absoluta en relación con el contenedor */
+  width: 200px; /* Ancho del círculo */
+  height: 200px; /* Alto del círculo (mismo valor que el ancho para hacerlo circular) */
+  background-color: #7b4ae233; /* Color de fondo del círculo */
+  border-radius: 50%; /* Border-radius del 50% para hacerlo circular */
+  left: 50%; /* Posiciona el centro del círculo en el centro horizontal del contenedor */
+  top: 50%; /* Posiciona el centro del círculo en el centro vertical del contenedor */
+  transform: translate(
+    -50%,
+    -55%
+  ); /* Alinea el centro del círculo correctamente */
+  filter: blur(10px);
+}
+
+.caja-borde {
+  /* position: absolute; */
+  border: 1px solid;
+  border-color: #abb2bf;
+  /* width: 100%; */
+  color: #abb2bf;
+}
+
+.cuadrado {
+  width: 1rem;
+  height: 1rem;
+  background-color: #7b4ae2; /* Color de fondo del círculo */
+}

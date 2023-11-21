@@ -1,24 +1,50 @@
+/* * {
+  margin: 0;
+  box-sizing: border-box;
+} */
+
+html {
+  scroll-behavior: smooth;
+}
+
+.columns {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 body {
   margin: 0;
   box-sizing: border-box;
   background-color: #282c33;
   font-family: "Fira Code", monospace;
+  /* color: #eee; */
 }
 
 .has-text-violeta {
   color: #7b4ae2;
 }
 
-.main {
-  background-color: #282c33;
-
+/* .home,
+.header {
   margin: 0 auto;
+  width: 60%;
+} */
+
+.navbar,
+.section-principal {
   width: 90%;
+  margin: 0 auto;
 }
 
-@media (min-width: 900px) {
-  .main {
-    width: 70%;
+/* .home {
+  position: relative;
+} */
+
+@media (min-width: 1100px) {
+  .home,
+  .header {
+    max-width: 60%;
+    margin: 0 auto;
   }
 }
 
@@ -81,12 +107,12 @@ body {
 
 .figure {
   width: 200px;
-  /* position: relative; */
+  position: relative;
 }
 
 @media (min-width: 900px) {
   .figure {
-    width: 300px;
+    width: 200px;
   }
   .img-container .figure .circulo {
     width: 280px;
@@ -94,13 +120,44 @@ body {
   }
 }
 
-.figure > img {
+.figure .img_personal {
   width: 100%;
+  /* position: relative; */
+  z-index: 1;
+  opacity: 0.7;
+}
+
+/* .img-container {
   position: relative;
-  /* z-index: 2; */
+} */
+
+.linea-violeta {
+  width: 50%;
+  height: 1px;
+  background-color: #7b4ae2;
+  animation: grow auto linear both;
+  animation-timeline: view();
+  animation-range: 100px 300px;
+}
+
+@keyframes grow {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
+}
+
+@media (min-width: 900px) {
+  .img-container {
+    /* position: relative; */
+    margin-top: 70px;
+  }
 }
 
 .circulo {
+  opacity: 0.6;
   position: absolute; /* Posición absoluta en relación con el contenedor */
   width: 200px; /* Ancho del círculo */
   height: 200px; /* Alto del círculo (mismo valor que el ancho para hacerlo circular) */
@@ -109,12 +166,39 @@ body {
   left: 50%; /* Posiciona el centro del círculo en el centro horizontal del contenedor */
   top: 50%; /* Posiciona el centro del círculo en el centro vertical del contenedor */
   transform: translate(
-    -50%,
-    -55%
+    -70%,
+    -45%
   ); /* Alinea el centro del círculo correctamente */
-  filter: blur(10px);
+  filter: blur(20px);
+}
+.img_logo {
+  position: absolute;
+  max-height: 30px;
+  max-width: 30px;
+  /* opacity: 0.7; */
 }
 
+.logo_js {
+  left: -90px;
+  top: 80px;
+}
+
+.logo_react {
+  left: -70px;
+  top: 20px;
+}
+
+.logo_typescript {
+  left: -70px;
+  top: 140px;
+}
+
+.logo_htmlcss {
+  top: -25px;
+  left: -30px;
+  /* left: 150px; */
+  /* top: -35px; */
+}
 .caja-borde {
   /* position: absolute; */
   border: 1px solid;
@@ -128,3 +212,5 @@ body {
   height: 1rem;
   background-color: #7b4ae2; /* Color de fondo del círculo */
 }
+
+/* Seccion skills */

@@ -1,0 +1,57 @@
+@media (min-width: 900px) {
+  /* .skills {
+    display: flex;
+  } */
+}
+
+.container {
+  width: 90%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.li {
+  padding: 10px 10px 10px 20px;
+  /* border: 1px solid gray; */
+  /* margin: 5px 0px; */
+  list-style: none;
+  cursor: pointer;
+  /* border-left: 4px solid green; */
+}
+
+.ul {
+  border-left: 0.5px solid gray;
+  padding-inline-start: 0px;
+  position: relative;
+}
+
+.linea-animada {
+  position: absolute;
+  /* top: 2px; */
+  left: -2.5px;
+  height: 43px;
+  width: 5px;
+  background-color: hsl(259, 72%, 59%);
+  transition-duration: 0.5s;
+  transition-property: transform;
+  transition-timing-function: ease-in-out;
+  /* transform: translateY(38px); */
+}
+
+.li:hover {
+  background-color: hsl(259, 72%, 59%, 0.3);
+  transition-duration: 0.5s;
+  /* color: white; */
+  /* transition-property: background-color; */
+  transition-timing-function: linear;
+}
+
+.li-select {
+  background-color: hsl(259, 72%, 59%, 0.3);
+  transition-duration: 0.5s;
+  /* color: white; */
+  /* transition-property: background-color; */
+  transition-timing-function: linear;
+}

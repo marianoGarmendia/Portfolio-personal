@@ -106,6 +106,22 @@ body {
   color: #abb2bf;
 }
 
+.is-fino {
+  border: 1px solid;
+  border-color: #abb2bf;
+  color: #abb2bf;
+  background-color: transparent;
+  && hover {
+    background-color: #abb2bf;
+    color: #282c33;
+  }
+}
+
+.button:hover {
+  background: rgba(123, 74, 226, 0.1);
+  color: #abb2bf;
+}
+
 .figure {
   width: 200px;
   position: relative;
@@ -215,3 +231,28 @@ body {
 }
 
 /* Seccion skills */
+.skills-logos-container > img {
+  height: 30px;
+  width: 30px;
+}
+
+/* Contacto content*/
+
+.contacto-content {
+  background-color: #18191b;
+}
+
+.logos-contacto > img {
+  height: 50px;
+  width: 50px;
+}
+
+.logos-contacto-container > a > img {
+  height: 50px;
+  width: 50px;
+}
+
+.logos-contacto .email-img {
+  width: 50px;
+  height: 50px;
+}

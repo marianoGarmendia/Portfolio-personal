@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="styles/skills.css" />
     <link rel="stylesheet" href="styles/proyects.css" />
     <link rel="stylesheet" href="styles/index.css" />
-    <script defer src="./index.js"></script>
+    <script defer type="module" src="./index.js"></script>
     <title>Portfolio-final</title>
   </head>
   <body>
@@ -45,7 +45,9 @@
               >
             </div>
             <div class="navbar-item">
-              <a href=""><span class="has-text-violeta">#</span>Sobre mi</a>
+              <a href="#sobre-mi"
+                ><span class="has-text-violeta">#</span>Sobre mi</a
+              >
             </div>
           </div>
         </div>
@@ -73,12 +75,22 @@
             <p><span class="has-text-violeta">#</span>Junior</p>
           </div>
           <div class="hablemos block">
-            <div
-              class="caja-borde-fino py-2 is-flex is-justify-content-space-evenly"
+            <!-- <div
+              class="caja-borde-fino py-2 is-flex is-justify-content-space-evenly is-hovered"
             >
-              <!-- <img src="img/WhatsappLogo.png" alt="" /> -->
               <p>Sobre mi</p>
-            </div>
+            </div> -->
+            <a href="#sobre-mi">
+              <button class="button is-fino is-outlined">Sobre mi</button>
+            </a>
+            <a href="#section-proyects">
+              <button
+                class="button is-fino is-outlined is-hidden-desktop"
+                id="section-projects"
+              >
+                Mis proyectos
+              </button>
+            </a>
           </div>
         </div>
         <div
@@ -121,7 +133,9 @@
               <div class="cuadrado mx-3"></div>
               <p>
                 Actualmente disponible para
-                <strong class="has-text-white">trabajar, crear y sumar</strong>
+                <strong class="has-text-white"
+                  >trabajar, colaborar y sumar</strong
+                >
               </p>
             </div>
           </div>
@@ -134,142 +148,10 @@
         <img src="img/Frame 27.png" alt="" />
       </div>
     </div>
-    <section
-      id="section-proyects"
-      class="section_proyects columns is-flex is-flex-direction-column block mt-2"
-    >
-      <div class="column my-6">
-        <div
-          class="is-flex is-flex-direction-row is-align-items-center is-justify-content-center"
-        >
-          <p class="has-text-white mx-3 is-size-4 proyect_text">
-            <span class="has-text-violeta">#</span>Proyectos
-          </p>
-          <span class="linea-violeta"></span>
-        </div>
-      </div>
-      <div class="projects-container columns">
-        <div class="card-project column is-4-desktop m-4">
-          <div class="card-project-content">
-            <div class="card-project-content__container-title">
-              <h3 class="card-project-content__h3 is-size-4">Task App</h3>
-              <span class="has-text-violeta has-text-centered"
-                >Js/ Bootstrap/ LocalStorage</span
-              >
-            </div>
-            <button class="card-project-content__btn is-size-5">ver mas</button>
-          </div>
-          <img
-            src="./img/img-project-2.png"
-            class="img-project"
-            alt="img-project"
-          />
-        </div>
-        <div class="card-project column is-4-desktop m-4">
-          <img
-            src="./img/img-proyect-1.png"
-            class="img-project"
-            alt="img-project"
-          />
-        </div>
-        <div class="card-project column is-4-desktop m-4">
-          <img
-            src="./img/img-proyect-1.png"
-            class="img-project"
-            alt="img-project"
-          />
-        </div>
-      </div>
-      <div class="projects-container columns">
-        <div class="card-project column is-4-desktop m-4">
-          <div class="card-project-content">
-            <div class="card-project-content__container-title">
-              <h3 class="card-project-content__h3 is-size-4">Memory Poke</h3>
-              <span class="has-text-violeta">ReactJs / Bulma Css</span>
-            </div>
-            <button class="card-project-content__btn">Ver mas</button>
-          </div>
-          <img
-            src="./img/img-proyect-1.png"
-            class="img-project"
-            alt="img-project"
-          />
-        </div>
-        <div class="card-project column is-4-desktop m-4">
-          <img
-            src="./img/img-proyect-1.png"
-            class="img-project"
-            alt="img-project"
-          />
-        </div>
-        <div class="card-project column is-4-desktop m-4">
-          <img
-            src="./img/img-proyect-1.png"
-            class="img-project"
-            alt="img-project"
-          />
-        </div>
-      </div>
-    </section>
-
-    <section class="skills mt-4 is-flex is-flex-direction-column">
-      <div class="column m-4 skills_text">
-        <div class="elements m-6">
-          <img src="img/Frame 27.png" alt="" />
-        </div>
-        <div
-          class="is-flex is-flex-direction-row is-align-items-center is-justify-content-center"
-        >
-          <p class="has-text-white mx-3 is-size-4">
-            <span class="has-text-violeta">#</span>Skills
-          </p>
-          <span class="linea-violeta"></span>
-        </div>
-      </div>
-      <div
-        class="column mt-6 container is-flex is-justify-content-space-evenly"
-      >
-        <div class="enlace_container">
-          <ul class="ul has-text-white">
-            <div class="linea-animada"></div>
-            <li class="li">Proyect</li>
-            <li class="li">About</li>
-            <li class="li">Contact</li>
-            <li class="li">Social</li>
-          </ul>
-        </div>
-        <div class="caja-borde m-5">
-          <p class="caja-borde py-4 px-5 has-text-white is-size-4">Lenguajes</p>
-          <p class="px-5 py-4 is-size-5">Javascript</p>
-          <p class="px-5 py-4 is-size-5">Typescript</p>
-        </div>
-      </div>
-      <!-- <div class="caja-borde m-5">
-        <p class="caja-borde py-4 px-5 has-text-white is-size-4">Lenguajes</p>
-        <p class="px-5 py-4 is-size-5">Javascript</p>
-        <p class="px-5 py-4 is-size-5">Typescript</p>
-      </div>
-
-      <div class="caja-borde m-5">
-        <p class="caja-borde py-4 px-5 has-text-white is-size-4">
-          Herramientas
-        </p>
-        <p class="px-5 py-4 is-size-5">VS Code</p>
-        <p class="px-5 py-4 is-size-5">Git | Github</p>
-        <p class="px-5 py-4 is-size-5">Parcel</p>
-      </div>
-      <div class="caja-borde m-5">
-        <p class="caja-borde py-4 px-5 has-text-white is-size-4">
-          Frameworks <span class="has-text-violeta">&</span> Librerias
-        </p>
-        <p class="px-5 py-4 is-size-5">React js</p>
-        <p class="px-5 py-4 is-size-5">Bulma css</p>
-      </div> -->
-    </section>
-    <section class="about-me">
-      <div class="elements m-6">
+    <section class="about-me" id="sobre-mi">
+      <!-- <div class="elements m-6">
         <img src="img/Frame 27.png" alt="" />
-      </div>
+      </div> -->
       <div class="column m-4">
         <div
           class="is-flex is-flex-direction-row is-align-items-center is-justify-content-center"
@@ -281,24 +163,449 @@
         </div>
       </div>
       <div class="description has-text-gray px-5 columns is-centered">
-        <div class="column is-9 has-text-centered">
-          <p class="mt-6">
-            Voy a elegir <span class="has-text-white">3 aspectos</span> que me
-            definen como developer: <br /><br />
-            <span class="has-text-violeta">#</span> Me apasiona el codigo y el
-            entorno que lo constituye <br /><br />
-            <span class="has-text-violeta">#</span> aprendo muy rapido y me
-            siento comodo con el estudio constante <br /><br />
-            <span class="has-text-violeta">#</span> trabajar frente a grandes
-            desafios me motiva aun mas.
+        <div class="column is-9 has-text-justify">
+          <div class="my-6">
+            <h2 class="has-text-white my-2 is-size-5">¿ Quien soy ?</h2>
+            <p>
+              Un apasionado que encontré en la programacion un lugar donde
+              desarrollar mi potencial. estoy completamente enfocado en dar el
+              salto hacia mi primera experiencia laboral como Dev, Me embarco en
+              este viaje armándome con conocimientos sólidos y herramientas ,
+              con muchas ganas de contribuir en un proyecto en equipo
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      id="section-proyects"
+      class="section_proyects columns is-flex is-flex-direction-column mt-2 column is-three-quarters mx-auto"
+    >
+      <div class="column my-6">
+        <div
+          class="is-flex is-flex-direction-row is-align-items-center is-justify-content-center"
+        >
+          <p class="has-text-white mx-3 is-size-4 proyect_text">
+            <span class="has-text-violeta">#</span>Proyectos
           </p>
-          <br />
-          <p class="my-2">
-            <span class="has-text-white my-2">El trabajo en equipo</span>
-            es algo que destaco en mis "softskills" ya que me desempeño en
-            liderar grupos desde hace varios años, si bien es de otro ambito
-            creo que las relaciones personales en este aspecto son unicas
+          <span class="linea-violeta"></span>
+        </div>
+      </div>
+      <div class="projects-container">
+        <div class="card-project column m-4">
+          <div class="card-project-content">
+            <div class="card-project-content__container-title">
+              <h3 class="card-project-content__h3 is-size-4">TrainingFy</h3>
+              <span class="has-text-violeta has-text-centered"
+                >React js/ Tailwind / Api</span
+              >
+            </div>
+            <button
+              id="btn-trainingfy"
+              class="card-project-content__btn is-size-5 ver-mas-project"
+            >
+              ver mas
+            </button>
+          </div>
+
+          <img
+            src="./img/img-project-5.png"
+            class="img-project"
+            alt="img-project"
+          />
+        </div>
+        <div class="card-project column m-4">
+          <div class="card-project-content">
+            <div class="card-project-content__container-title">
+              <h3 class="card-project-content__h3 is-size-4">Memory Poke</h3>
+              <span class="has-text-violeta">Js / Api rest/ Fetch</span>
+            </div>
+            <button
+              id="btn-memory-poke"
+              class="card-project-content__btn is-size-5 ver-mas-project"
+            >
+              Ver mas
+            </button>
+          </div>
+          <img
+            src="./img/img-proyect-1.png"
+            class="img-project"
+            alt="img-project"
+          />
+        </div>
+        <div class="card-project column m-4">
+          <div class="card-project-content">
+            <div class="card-project-content__container-title">
+              <h3 class="card-project-content__h3 is-size-4">Portfolio</h3>
+              <span class="has-text-violeta">Js / Bulma css</span>
+            </div>
+            <button
+              id="btn-portfolio"
+              class="card-project-content__btn is-size-5 ver-mas-project"
+            >
+              Ver mas
+            </button>
+          </div>
+          <img
+            src="./img/img-project-6.png"
+            class="img-project"
+            alt="img-project"
+          />
+        </div>
+        <div class="card-project column m-4">
+          <div class="card-project-content">
+            <div class="card-project-content__container-title">
+              <h3 class="card-project-content__h3 is-size-4">Task App</h3>
+              <span class="has-text-violeta has-text-centered"
+                >Js/ Bootstrap/ LocalStorage</span
+              >
+            </div>
+            <button
+              id="btn-task-app"
+              class="card-project-content__btn is-size-5 ver-mas-project"
+            >
+              ver mas
+            </button>
+          </div>
+
+          <img
+            src="./img/img-project-2.png"
+            class="img-project"
+            alt="img-project"
+          />
+        </div>
+        <div class="card-project column m-4">
+          <div class="card-project-content">
+            <div class="card-project-content__container-title">
+              <h3 class="card-project-content__h3 is-size-4">Pizza Prima</h3>
+              <span class="has-text-violeta has-text-centered"
+                >Js/ Css animaciones/ Landing page</span
+              >
+            </div>
+            <button
+              id="btn-pizza-prima"
+              class="card-project-content__btn is-size-5 ver-mas-project"
+            >
+              ver mas
+            </button>
+          </div>
+          <img
+            src="./img/img-project-3.png"
+            class="img-project"
+            alt="img-project"
+          />
+        </div>
+        <div class="card-project column m-4">
+          <div class="card-project-content">
+            <div class="card-project-content__container-title">
+              <h3 class="card-project-content__h3 is-size-4 has-text-centered">
+                Piedra Papel Tijera
+              </h3>
+              <span class="has-text-violeta has-text-centered"
+                >Typescript/ Componentes/ estado/ LocalStorage</span
+              >
+            </div>
+            <button
+              id="btn-piedra-papel-tijera"
+              class="card-project-content__btn is-size-5 ver-mas-project"
+            >
+              ver mas
+            </button>
+          </div>
+          <img
+            src="./img/img-project-4.png"
+            class="img-project"
+            alt="img-project"
+          />
+        </div>
+
+        <!-- Modal de trainingfy -->
+        <div class="modal modal-trainingfy">
+          <div class="modal-background close-modal"></div>
+          <div
+            class="modal-content is-four-fifths column has-text-centered has-text-white"
+          >
+            <div class="img-modal-project-container is-flex is-fino mx-auto">
+              <div class="img-container-slider is-flex">
+                <img
+                  src="./img/img-project-5.png"
+                  alt=""
+                  class="img-modal-project"
+                />
+                <img
+                  src="./img/traningfy-page-uno.png"
+                  alt=""
+                  class="img-modal-project"
+                />
+                <img
+                  src="./img/trainingfy-page-dos.png"
+                  alt=""
+                  class="img-modal-project"
+                />
+              </div>
+            </div>
+            <h3 class="is-size-4 has-text-violeta my-4">
+              <a
+                href="https://trainingfy.netlify.app/"
+                class="enlace-web-modal has-text-weight-bold"
+                target="_blank"
+                >TrainingFy >></a
+              >
+            </h3>
+            <p class="px-4 has-text-centered">
+              Este proyecto fue pensado en las necesidades de mi emprendimiento
+              en el sector fitness, una APP donde puedas generar tus
+              entrenamientos en base a las caracteristicas individuales de cada
+              clase, consumiendo una api publica, que en un futuro sera una base
+              de datos personalizada.
+            </p>
+            <div class="my-4">
+              <img src="./img-logos/react.svg" alt="" class="img-modal-tech" />
+              <img
+                src="./img-logos/tailwindcss.svg"
+                alt=""
+                class="img-modal-tech"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- Modal de taskApp -->
+        <div class="modal modal-taskapp">
+          <div class="modal-background close-modal"></div>
+          <div
+            class="modal-content is-four-fifths column has-text-centered has-text-white"
+          >
+            <div class="img-modal-project-container is-flex is-fino mx-auto">
+              <div class="img-container-slider is-flex slider-taskapp">
+                <img
+                  src="./img/task-app-uno.png"
+                  alt=""
+                  class="img-modal-project"
+                />
+                <img
+                  src="./img/task-app-dos.png"
+                  alt=""
+                  class="img-modal-project"
+                />
+                <img
+                  src="./img/task-app-tres.png"
+                  alt=""
+                  class="img-modal-project"
+                />
+              </div>
+            </div>
+            <h3 class="is-size-4 has-text-violeta my-4">
+              <a
+                href="https://marianogarmendia.github.io/Task-App-Bootstrap/"
+                class="enlace-web-modal has-text-weight-bold"
+                target="_blank"
+                >Task App >></a
+              >
+            </h3>
+            <p class="px-4 has-text-centered">
+              App para organizar las tareas, editarlas y borrarlas, utilizando
+              localStorage para persistir los datos y con mensajes de
+              notificacion al crear, editar o borrar
+            </p>
+            <div class="my-4">
+              <img
+                src="./img-logos/javascript.svg"
+                alt=""
+                class="img-modal-tech"
+              />
+              <img
+                src="./img-logos/bootstrap.svg"
+                alt=""
+                class="img-modal-tech"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills mt-4 is-flex is-flex-direction-column">
+      <div class="is-centered columns"></div>
+      <div class="column m-4 skills_text">
+        <div class="elements m-6">
+          <img src="img/Frame 27.png" alt="" />
+        </div>
+        <div
+          class="is-flex is-flex-direction-row is-align-items-center is-justify-content-center"
+        >
+          <p class="has-text-white mx-3 is-size-4">
+            <span class="has-text-violeta">#</span>Habilidades
           </p>
+          <span class="linea-violeta"></span>
+        </div>
+      </div>
+      <div class="column mt-6 column is-three-quarters skills-container">
+        <div class="enlace_container">
+          <ul class="ul has-text-white">
+            <div class="linea-animada"></div>
+            <li id="frontend" class="li">Frontend</li>
+            <li id="frameworks" class="li">Frameworks</li>
+            <li id="herramientas" class="li">Herramientas</li>
+            <!-- <li id="habilidades-blandas" class="li">Habilidades blandas</li> -->
+          </ul>
+        </div>
+        <div id="frontend" class="caja-borde skills-frontend box-skills">
+          <p class="caja-borde py-4 px-5 has-text-white is-size-4">Frontend</p>
+          <p class="px-5 py-2 is-size-5">Javascript</p>
+          <p class="px-5 py-2 is-size-5">Typescript</p>
+          <p class="px-5 py-2 is-size-6">Html5 | Css</p>
+          <p class="px-5 py-2 is-size-6">
+            Animaciones | flex | grid | Diseños responsives
+          </p>
+          <div class="is-flex skills-logos-container px-5 py-2 mb-2">
+            <img src="img-logos/css.svg" alt="" />
+            <img src="img-logos/html5.svg" alt="" class="ml-4" />
+            <img src="img-logos/typescript.svg" alt="" class="ml-4" />
+            <img src="img-logos/javascript.svg" alt="" class="ml-4" />
+          </div>
+        </div>
+        <div id="frameworks" class="caja-borde skills-frameworks box-skills">
+          <p class="caja-borde py-4 px-5 has-text-white is-size-4">
+            Frameworks
+          </p>
+          <p class="px-5 py-2 is-size-5">React js</p>
+          <p class="px-5 py-2 is-size-5">Tawilwind css</p>
+          <p class="px-5 py-2 is-size-5">Bulma css</p>
+          <div class="is-flex skills-logos-container px-5 py-2 mb-2">
+            <img src="img-logos/react.svg" alt="" />
+            <img src="img-logos/tailwindcss.svg" alt="" class="ml-4" />
+          </div>
+        </div>
+        <div
+          id="herramientas"
+          class="caja-borde skills-herramientas box-skills"
+        >
+          <p class="caja-borde py-4 px-5 has-text-white is-size-4">
+            Herramientas
+          </p>
+          <p class="px-5 py-2 is-size-5">Git | GitHub</p>
+          <p class="px-5 py-2 is-size-5">Parcel</p>
+          <p class="px-5 py-2 is-size-5">VS Code</p>
+          <p class="px-5 py-2 is-size-5">CMS Contentful</p>
+          <div class="is-flex skills-logos-container px-5 py-2 mb-2">
+            <img src="img-logos/git.svg" alt="" />
+            <img src="img-logos/vscode.svg" alt="" class="ml-4" />
+          </div>
+        </div>
+      </div>
+      <div class="my-6 column">
+        <div class="column my-4">
+          <div
+            class="is-flex is-flex-direction-row is-align-items-center is-justify-content-center"
+          >
+            <p
+              class="has-text-white mx-3 is-size-4 is-flex is-flex-direction-column-mobile"
+            >
+              <span class="has-text-violeta">#</span>Habilidades Blandas
+            </p>
+            <span class="linea-violeta"></span>
+          </div>
+        </div>
+        <div class="column is-9 mx-auto mt-6">
+          <div class="caja-borde my-4 py-5">
+            <p class="px-5 pb-5 has-text-violeta is-size-5">
+              # Aprendizaje continuo y adaptabilidad
+            </p>
+            <p class="px-5 is-size-6">
+              Estudiar y aprender son caracteristicas en mi que destaco como un
+              punto fuerte en mis habilidades, persigo la evolucion constante
+            </p>
+          </div>
+          <div class="caja-borde my-4 py-5">
+            <p class="px-5 pb-5 has-text-violeta is-size-5">
+              # Colaboracion en equipo
+            </p>
+            <p class="px-5 is-size-6">
+              En mis años como coordinador de entrenadores y tambien como
+              gerente de mi propio centro de entrenamiento he desarrollado y
+              aplicado varias buenas practicas en cuanto a trabajo colaborativo
+              con mis equipos.
+            </p>
+          </div>
+          <div class="caja-borde my-4 py-5">
+            <p class="px-5 pb-5 has-text-violeta is-size-5">
+              # Pensamiento creativo y busqueda de soluciones
+            </p>
+            <p class="px-5 is-size-6">
+              La tarea de emprendedor esta lleno de desafios y tener creatividad
+              para destacarse y solucionar rapidamente inconvenientes diarios
+              son moneda corriente con los que convivo en el dia a dia
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="column is-centered section-contacto">
+      <div class="column mb-6">
+        <div
+          class="is-flex is-flex-direction-row is-align-items-center is-justify-content-center"
+        >
+          <p class="has-text-white mx-3 is-size-4">
+            <span class="has-text-violeta">#</span>Contacto
+          </p>
+          <span class="linea-violeta"></span>
+        </div>
+      </div>
+      <div class="columns is-centered mt-6">
+        <div
+          class="is-flex logos-contacto-container column is-9 has-text-white is-flex-direction-column is-align-items-center py-4 px-2 has-text-centered"
+        >
+          <p class="has-text-white">¡Gracias por haber llegado hasta acá!</p>
+          <p>Podes contactar conmigo por redes, whatsapp o email.</p>
+          <p class="my-2">Hasta Pronto 👋</p>
+        </div>
+      </div>
+      <div class="columns is-centered is-full mt-6">
+        <div
+          class="column is-9 my-6 contacto-content is-flex is-flex-direction-column is-align-items-center"
+        >
+          <p class="is-size-5 has-text-white my-6">¡Hablemos!</p>
+          <div class="logos-contacto-container my-2 is-flex">
+            <a href="">
+              <img src="img-logos/github.svg" alt="" class="mx-4" />
+            </a>
+            <a href="">
+              <img src="img-logos/linkedin (1).svg" alt="" class="mx-4" />
+            </a>
+            <a href="">
+              <img
+                src="img-logos/mail_email_message_electronic_online_web_icon-icons.com_59986.svg"
+                class="email-img mx-4"
+                alt=""
+              />
+            </a>
+            <a href="">
+              <img src="img-logos/whatsapp.svg" class="email-img mx-4" alt="" />
+            </a>
+          </div>
+          <div
+            class="is-fino is-flex is-flex-direction-column p-2 has-text-white my-6"
+          >
+            Mariano Garmendia
+            <span class="my-2">Frontend React Js</span>
+            <span class="has-text-violeta">Junior</span>
+            <p class="my-2">@marianoDev@info</p>
+            <p>Buenos Aires - La Plata</p>
+          </div>
+          <!-- <div class="is-fino p-4">
+            <p class="is-size-5">¡Hablemos!</p>
+            <div class="logos-contacto is-flex is-align-items-center">
+              <img src="img-logos/linkedin (1).svg" alt="" />
+              <img src="img-logos/Email.svg" class="email-img" alt="" />
+              <img src="img-logos/whatsapp.svg" class="email-img" alt="" />
+            </div>
+          </div> -->
+          <!-- <div class="is-fino is-flex is-flex-direction-column p-2">
+            Mariano Garmendia
+            <span class="">React js developer</span>
+            <span>Junior</span>
+          </div> -->
         </div>
       </div>
     </section>

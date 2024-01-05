@@ -256,3 +256,12 @@ body {
   width: 50px;
   height: 50px;
 }
+
+.logos-contacto-container > a {
+  transition: transform 0.3s ease-in-out, fill 0.3s ease-in-out;
+}
+
+.logos-contacto-container > a:hover {
+  transform: scale(1.05); /* Cambia el tamaño al hacer hover */
+  fill: #7b4ae2; /* Elimina la escala de grises al hacer hover */
+}

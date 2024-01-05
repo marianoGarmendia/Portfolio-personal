@@ -16,6 +16,24 @@ export const modalFunction = () => {
         const modalTaskApp = document.querySelector(".modal-taskapp");
 
         modalsSlider(imgContainerSlider, modalTaskApp, 900);
+      } else if (btn.id.includes("piedra-papel-tijera")) {
+        const imgContainerSlider = document.querySelector(".slider-ppt");
+        const modalPpt = document.querySelector(".modal-piedrapapeltijera");
+        modalsSlider(imgContainerSlider, modalPpt, 900);
+      } else if (btn.id.includes("memory-poke")) {
+        const imgContainerSlider = document.querySelector(
+          ".slider-memory-poke"
+        );
+        const modalMmemoryPoke = document.querySelector(".modal-memory-poke");
+        modalsSlider(imgContainerSlider, modalMmemoryPoke, 900);
+      } else if (btn.id.includes("pizza-prima")) {
+        const imgContainerSlider = document.querySelector(".slider-pizzaprima");
+        const modalPizzaPrima = document.querySelector(".modal-pizzaprima");
+        modalsSlider(imgContainerSlider, modalPizzaPrima, 900);
+      } else if (btn.id.includes("portfolio")) {
+        const imgContainerSlider = document.querySelector(".slider-portfolio");
+        const modalPortfolio = document.querySelector(".modal-portfolio");
+        modalsSlider(imgContainerSlider, modalPortfolio, 900);
       }
     });
   });
@@ -30,7 +48,7 @@ const sliderOn = (slider, distancia, move = 300) => {
     if (move === distancia) {
       clearInterval(interval);
     }
-  }, 2000);
+  }, 1500);
 };
 
 const modalsSlider = (slider, modal, distancia) => {

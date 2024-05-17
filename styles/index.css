@@ -216,6 +216,15 @@ body {
   /* left: 150px; */
   /* top: -35px; */
 }
+
+.logo_node {
+  top: -55px;
+  left: 30px;
+
+  /* left: 150px; */
+  /* top: -35px; */
+}
+
 .caja-borde {
   /* position: absolute; */
   border: 1px solid;

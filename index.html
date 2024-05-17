@@ -77,7 +77,7 @@
             <p>Garmendia</p>
           </div>
           <div class="profesion block">
-            <p class="profesion has-text-white">Frontend developer</p>
+            <p class="profesion has-text-white">Fullstack developer</p>
             <p><span class="has-text-violeta">#</span>Junior</p>
           </div>
           <div class="hablemos block">
@@ -126,6 +126,12 @@
                 class="img_logo logo_htmlcss"
                 alt=""
               />
+              <img
+                src="img-logos/nodejs.svg"
+                class="img_logo logo_node"
+                alt=""
+              />
+
               <div class="circulo"></div>
               <img src="img/img-personal.png" class="img_personal" alt="" />
             </figure>
@@ -207,6 +213,28 @@
 
           <img
             src="./img/img-project-5.png"
+            class="img-project"
+            alt="img-project"
+          />
+        </div>
+        <div class="card-project column m-4">
+          <div class="card-project-content">
+            <div class="card-project-content__container-title">
+              <h3 class="card-project-content__h3 is-size-4">Components Css</h3>
+              <span class="has-text-violeta has-text-centered"
+                >React js/ Tailwind / React Editor</span
+              >
+            </div>
+            <button
+              id="btn-component-css"
+              class="card-project-content__btn is-size-5 ver-mas-project"
+            >
+              ver mas
+            </button>
+          </div>
+
+          <img
+            src="./img/component-css.png"
             class="img-project"
             alt="img-project"
           />
@@ -357,6 +385,58 @@
               clase, consumiendo una api publica, que en un futuro sera una base
               de datos personalizada. <br />React js | React router | useEffect
               | Tailwind
+            </p>
+            <div class="my-4">
+              <img src="./img-logos/react.svg" alt="" class="img-modal-tech" />
+              <img
+                src="./img-logos/tailwindcss.svg"
+                alt=""
+                class="img-modal-tech"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- Modal de Components css -->
+        <div class="modal modal-components-css">
+          <div class="modal-background close-modal"></div>
+          <div
+            class="modal-content is-four-fifths column has-text-centered has-text-white"
+          >
+            <div class="img-modal-project-container is-flex is-fino mx-auto">
+              <div class="img-container-slider is-flex slider-components-css">
+                <img
+                  src="./img/components-css-uno.png"
+                  alt=""
+                  class="img-modal-project"
+                />
+                <img
+                  src="./img/components-css-dos.png"
+                  alt=""
+                  class="img-modal-project"
+                />
+                <img
+                  src="./img/components-css-tres.png"
+                  alt=""
+                  class="img-modal-project"
+                />
+              </div>
+            </div>
+            <h3 class="is-size-4 has-text-violeta my-4">
+              <a
+                href="https://marianogarmendia.github.io/components-css/"
+                class="enlace-web-modal has-text-weight-bold"
+                target="_blank"
+                >Components Css >></a
+              >
+            </h3>
+            <p class="px-4 has-text-centered my-2">
+              Galeria de componentes en css nativo y Tailwind, pensado como una
+              herramienta dev donde hay a disposición componentes como botones,
+              cards, formularios que podes copiar y pegar en tus proyectos;
+              Además cuenta con un editor de código online integrado con el cual
+              podes modificar el componente a gusto y copiar el código
+              resultante. <br />El proyecto está en sus inicios y promete ser
+              muy útil. <br />React js | React router | Tailwind | Monaco Editor
             </p>
             <div class="my-4">
               <img src="./img-logos/react.svg" alt="" class="img-modal-tech" />
@@ -636,17 +716,22 @@
         <div class="enlace_container">
           <ul class="ul has-text-white">
             <div class="linea-animada"></div>
-            <li id="frontend" class="li">Frontend</li>
+            <li id="frontend" class="li">Tecnologías</li>
             <li id="frameworks" class="li">Frameworks</li>
             <li id="herramientas" class="li">Herramientas</li>
             <!-- <li id="habilidades-blandas" class="li">Habilidades blandas</li> -->
           </ul>
         </div>
         <div id="frontend" class="caja-borde skills-frontend box-skills">
-          <p class="caja-borde py-4 px-5 has-text-white is-size-4">Frontend</p>
+          <p class="caja-borde py-4 px-5 has-text-white is-size-4">
+            Tecnologías
+          </p>
           <p class="px-5 py-2 is-size-5">Javascript</p>
           <p class="px-5 py-2 is-size-5">Typescript</p>
           <p class="px-5 py-2 is-size-6">Html5 | Css</p>
+          <p class="px-5 py-2 is-size-6">Firestore | Firebase</p>
+          <p class="px-5 py-2 is-size-6">Node js</p>
+
           <p class="px-5 py-2 is-size-6">
             Animaciones | flex | grid | Diseños responsives
           </p>
@@ -655,6 +740,8 @@
             <img src="img-logos/html5.svg" alt="" class="ml-4" />
             <img src="img-logos/typescript.svg" alt="" class="ml-4" />
             <img src="img-logos/javascript.svg" alt="" class="ml-4" />
+            <img src="img-logos/firebase.svg" alt="" class="ml-4" />
+            <img src="img-logos/nodejs.svg" alt="" class="ml-4" />
           </div>
         </div>
         <div id="frameworks" class="caja-borde skills-frameworks box-skills">
@@ -664,9 +751,11 @@
           <p class="px-5 py-2 is-size-5">React js</p>
           <p class="px-5 py-2 is-size-5">Tawilwind css</p>
           <p class="px-5 py-2 is-size-5">Bulma css</p>
+          <p class="px-5 py-2 is-size-5">Express js</p>
           <div class="is-flex skills-logos-container px-5 py-2 mb-2">
             <img src="img-logos/react.svg" alt="" />
             <img src="img-logos/tailwindcss.svg" alt="" class="ml-4" />
+            <img src="img-logos/Express.js_dark.svg" alt="" class="ml-4" />
           </div>
         </div>
         <div

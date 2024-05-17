@@ -34,6 +34,12 @@ export const modalFunction = () => {
         const imgContainerSlider = document.querySelector(".slider-portfolio");
         const modalPortfolio = document.querySelector(".modal-portfolio");
         modalsSlider(imgContainerSlider, modalPortfolio, 900);
+      } else if (btn.id.includes("component-css")) {
+        const imgContainerSlider = document.querySelector(
+          ".slider-components-css"
+        );
+        const modalPortfolio = document.querySelector(".modal-components-css");
+        modalsSlider(imgContainerSlider, modalPortfolio, 900);
       }
     });
   });

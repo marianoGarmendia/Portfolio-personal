@@ -40,6 +40,12 @@ export const modalFunction = () => {
         );
         const modalPortfolio = document.querySelector(".modal-components-css");
         modalsSlider(imgContainerSlider, modalPortfolio, 900);
+      } else if (btn.id.includes("oneclick")) {
+        const imgContainerSlider = document.querySelector(
+          ".img-container-slider"
+        );
+        const modalPortfolio = document.querySelector(".modal-oneClick");
+        modalsSlider(imgContainerSlider, modalPortfolio, 900);
       }
     });
   });
